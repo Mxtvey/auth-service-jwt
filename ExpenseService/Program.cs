@@ -14,7 +14,7 @@ builder.Services.AddControllers();
 builder.Services.AddOpenApi();
 
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseNpgsql("Host=localhost;Port=5432;Database=expense;Username=postgres;Password=1234"));
+    options.UseNpgsql("Host=localhost;Port=5432;Database=expense;Username=postgres;Password=***********"));
 
 builder.Services.AddScoped<IAuthService, AuthService>();
 
