@@ -1,7 +1,6 @@
 C:\Users\mxtvey\Desktop\proga\chsr1231\ExpenseService\ExpenseService\ExpenseService\bin\Debug\net10.0\appsettings.Development.json
 C:\Users\mxtvey\Desktop\proga\chsr1231\ExpenseService\ExpenseService\ExpenseService\bin\Debug\net10.0\appsettings.json
 C:\Users\mxtvey\Desktop\proga\chsr1231\ExpenseService\ExpenseService\ExpenseService\bin\Debug\net10.0\ExpenseService.staticwebassets.endpoints.json
-C:\Users\mxtvey\Desktop\proga\chsr1231\ExpenseService\ExpenseService\ExpenseService\bin\Debug\net10.0\ExpenseService.exe
 C:\Users\mxtvey\Desktop\proga\chsr1231\ExpenseService\ExpenseService\ExpenseService\bin\Debug\net10.0\ExpenseService.deps.json
 C:\Users\mxtvey\Desktop\proga\chsr1231\ExpenseService\ExpenseService\ExpenseService\bin\Debug\net10.0\ExpenseService.runtimeconfig.json
 C:\Users\mxtvey\Desktop\proga\chsr1231\ExpenseService\ExpenseService\ExpenseService\bin\Debug\net10.0\ExpenseService.dll
@@ -21,7 +20,6 @@ C:\Users\mxtvey\Desktop\proga\chsr1231\ExpenseService\ExpenseService\ExpenseServ
 C:\Users\mxtvey\Desktop\proga\chsr1231\ExpenseService\ExpenseService\ExpenseService\obj\Debug\net10.0\ExpenseService.csproj.CoreCompileInputs.cache
 C:\Users\mxtvey\Desktop\proga\chsr1231\ExpenseService\ExpenseService\ExpenseService\obj\Debug\net10.0\ExpenseService.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\mxtvey\Desktop\proga\chsr1231\ExpenseService\ExpenseService\ExpenseService\obj\Debug\net10.0\ExpenseService.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\mxtvey\Desktop\proga\chsr1231\ExpenseService\ExpenseService\ExpenseService\obj\Debug\net10.0\ExpenseService.sourcelink.json
 C:\Users\mxtvey\Desktop\proga\chsr1231\ExpenseService\ExpenseService\ExpenseService\obj\Debug\net10.0\rjimswa.dswa.cache.json
 C:\Users\mxtvey\Desktop\proga\chsr1231\ExpenseService\ExpenseService\ExpenseService\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
 C:\Users\mxtvey\Desktop\proga\chsr1231\ExpenseService\ExpenseService\ExpenseService\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
@@ -132,3 +130,11 @@ C:\Users\mxtvey\Desktop\proga\chsr1231\ExpenseService\ExpenseService\ExpenseServ
 C:\Users\mxtvey\Desktop\proga\chsr1231\ExpenseService\ExpenseService\ExpenseService\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\mxtvey\Desktop\proga\chsr1231\ExpenseService\ExpenseService\ExpenseService\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\mxtvey\Desktop\proga\chsr1231\ExpenseService\ExpenseService\ExpenseService\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\mxtvey\Desktop\proga\chsr1231\ExpenseService\ExpenseService\ExpenseService\bin\Debug\net10.0\ExpenseService.staticwebassets.runtime.json
+C:\Users\mxtvey\Desktop\proga\chsr1231\ExpenseService\ExpenseService\ExpenseService\obj\Debug\net10.0\compressed\p2sdsai6g6-{0}-c5i4wqf6p0-c5i4wqf6p0.gz
+C:\Users\mxtvey\Desktop\proga\chsr1231\ExpenseService\ExpenseService\ExpenseService\obj\Debug\net10.0\compressed\uqvdbpv1t8-{0}-c7h3s8x1eb-c7h3s8x1eb.gz
+C:\Users\mxtvey\Desktop\proga\chsr1231\ExpenseService\ExpenseService\ExpenseService\obj\Debug\net10.0\compressed\fgbod3c2f4-{0}-wlcxxnkv0j-wlcxxnkv0j.gz
+C:\Users\mxtvey\Desktop\proga\chsr1231\ExpenseService\ExpenseService\ExpenseService\obj\Debug\net10.0\compressed\3s4twyq8vc-{0}-swlegfemgn-swlegfemgn.gz
+C:\Users\mxtvey\Desktop\proga\chsr1231\ExpenseService\ExpenseService\ExpenseService\obj\Debug\net10.0\compressed\psf5336v7f-{0}-uf6c4s9lj7-uf6c4s9lj7.gz
+C:\Users\mxtvey\Desktop\proga\chsr1231\ExpenseService\ExpenseService\ExpenseService\obj\Debug\net10.0\compressed\1sqtbwmlhy-{0}-ufut9ktphz-ufut9ktphz.gz
+C:\Users\mxtvey\Desktop\proga\chsr1231\ExpenseService\ExpenseService\ExpenseService\bin\Debug\net10.0\appsettings.Local.json

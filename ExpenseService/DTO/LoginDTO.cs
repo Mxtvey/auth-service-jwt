@@ -1,7 +1,13 @@
-﻿namespace ExpenseService.DTO;
+using System.ComponentModel.DataAnnotations;
+
+namespace ExpenseService.DTO;
 
 public class LoginDTO
 {
-    public string Email { get; set; } = null!;
-    public string Password { get; set; } = null!;
+    [Required]
+    [EmailAddress]
+    public string Email { get; set; } = string.Empty;
+
+    [Required]
+    public string Password { get; set; } = string.Empty;
 }

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExpenseFlow | Purchases</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div class="app-shell">
+    <header class="app-header">
+        <div>
+            <p class="brand-mark">ExpenseFlow</p>
+            <h1>Purchases</h1>
+            <p class="lead small">
+                Add, edit and remove purchases from a single clean dashboard.
+            </p>
+        </div>
+
+        <div class="header-actions">
+            <div class="metric-card">
+                <span>Entries</span>
+                <strong id="expenseCount">0</strong>
+            </div>
+            <div class="metric-card">
+                <span>Total</span>
+                <strong id="expenseTotal">0.00 RUB</strong>
+            </div>
+            <a class="ghost-btn nav-link" href="/login.html">Account</a>
+            <button id="logoutBtn" class="ghost-btn" type="button">Log out</button>
+        </div>
+    </header>
+
+    <main class="app-grid">
+        <section class="surface profile-surface">
+            <div class="surface-head">
+                <div>
+                    <p class="section-kicker">Profile</p>
+                    <h2>Current session</h2>
+                </div>
+                <button id="refreshBtn" class="secondary-btn" type="button">Refresh</button>
+            </div>
+
+            <div class="info-grid">
+                <div class="info-card">
+                    <span>User</span>
+                    <strong id="currentUser">Loading...</strong>
+                </div>
+                <div class="info-card">
+                    <span>Status</span>
+                    <strong id="tokenStatus">Checking...</strong>
+                </div>
+            </div>
+        </section>
+
+        <section class="surface form-surface">
+            <div class="surface-head">
+                <div>
+                    <p class="section-kicker">Editor</p>
+                    <h2>Purchase form</h2>
+                </div>
+            </div>
+
+            <form id="expenseForm" class="expense-form">
+                <input id="expenseId" type="hidden">
+
+                <label>
+                    <span>Amount</span>
+                    <input id="amount" type="number" min="0.01" step="0.01" placeholder="1250.50" required>
+                </label>
+
+                <label>
+                    <span>Category</span>
+                    <input id="category" type="text" maxlength="50" placeholder="Groceries" required>
+                </label>
+
+                <label class="wide">
+                    <span>Description</span>
+                    <input id="description" type="text" maxlength="100" placeholder="Weekly supermarket purchase" required>
+                </label>
+
+                <label>
+                    <span>Date</span>
+                    <input id="date" type="datetime-local" required>
+                </label>
+
+                <div class="form-actions">
+                    <button id="saveBtn" class="primary-btn" type="submit">Save purchase</button>
+                    <button id="cancelEditBtn" class="ghost-btn" type="button">Clear</button>
+                </div>
+            </form>
+
+            <div id="messageBox" class="message-box" hidden></div>
+        </section>
+
+        <section class="surface list-surface">
+            <div class="surface-head">
+                <div>
+                    <p class="section-kicker">History</p>
+                    <h2>All purchases</h2>
+                </div>
+            </div>
+
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Category</th>
+                        <th>Description</th>
+                        <th>Amount</th>
+                        <th>Actions</th>
+                    </tr>
+                    </thead>
+                    <tbody id="expenseTableBody">
+                    <tr>
+                        <td colspan="5" class="empty-state">Loading purchases...</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+</div>
+
+<script src="/expenses.js"></script>
+</body>
+</html>

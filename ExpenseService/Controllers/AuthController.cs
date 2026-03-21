@@ -1,8 +1,10 @@
 ﻿using System.Security.Claims;
+using ExpenseService.DataBase;
 using ExpenseService.DTO;
 using ExpenseService.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace ExpenseService.Controllers;
 
@@ -11,11 +13,13 @@ namespace ExpenseService.Controllers;
 public class AuthController : ControllerBase
 {
     private readonly IAuthService _authService;
+    private readonly AppDbContext _db;
     
 
-    public AuthController(IAuthService authService)
+    public AuthController(IAuthService authService, AppDbContext db)
     {
         _authService = authService;
+        _db = db;
     }
 
     [HttpPost("register")]
@@ -32,10 +36,21 @@ public class AuthController : ControllerBase
     }
     [Authorize]
     [HttpGet("me")]
-    public async Task<IActionResult> Me()
+    public async Task<IActionResult> Me(CancellationToken ct)
     {
-        var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)!.Value);
-        var user = await _db.users.FindAsync(userId);
+        var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+        if (!int.TryParse(userIdClaim, out var userId))
+        {
+            return Unauthorized();
+        }
+
+        var user = await _db.users
+            .AsNoTracking()
+            .FirstOrDefaultAsync(u => u.Id == userId, ct);
+        if (user == null)
+        {
+            return NotFound();
+        }
 
         return Ok(new
         {
